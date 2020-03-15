@@ -14,12 +14,14 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/echo", function(req, res) {
-  var speech =
-    req.body.queryResult &&
-    req.body.queryResult.parameters &&
-    req.body.queryResult.parameters.echoText
-      ? req.body.queryResult.parameters.echoText
-      : "Seems like some problem. Speak again.";
+//  var speech =
+//    req.body.queryResult &&
+//    req.body.queryResult.parameters &&
+//    req.body.queryResult.parameters.echoText
+//      ? req.body.queryResult.parameters.echoText
+//      : "Seems like some problem. Speak again.";
+  
+  var speech = "Welcome, You launched the app! You can say Tony Cindy turn on/off the light or Help. Which would you like to try?""
   
   var speechResponse = {
     google: {
