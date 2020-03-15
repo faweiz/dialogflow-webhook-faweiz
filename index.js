@@ -21,7 +21,7 @@ restService.post("/echo", function(req, res) {
 //      ? req.body.queryResult.parameters.echoText
 //      : "Seems like some problem. Speak again.";
   
-  var speech = "Welcome, You launched the app! You can say Tony Cindy turn on/off the light or Help. Which would you like to try?""
+  var speech = "Welcome, You launched the app! You can say Tony Cindy turn on/off the light or Help. Which would you like to try?";
   
   var speechResponse = {
     google: {
